@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Georgia', serif;
+	background-color: #121212;
+	color: #e0e0e0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	background-color: #1e1e1e;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px #630592;
+	max-width: 400px;
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'UnifrakturCook', cursive;
+	font-size: 32px;
+	color: #a100f2;
+	margin-bottom: 30px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	color: #bdbdbd;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #2e2e2e;
+	color: #fff;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-radius: 5px;
+	background-color: #600b8e;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #7306aa;
+}
+
+.alerta {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #a100f2;
+	color: #fff;
+	padding: 15px 25px;
+	border-radius: 8px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	font-family: 'Georgia', serif;
+	z-index: 9999;
+	opacity: 0;
+	animation: fadeInOut 4s ease forwards;
+}
+
+@keyframes fadeInOut {
+	0% { opacity: 0; top: 0px; }
+	10% { opacity: 1; top: 20px; }
+	90% { opacity: 1; top: 20px; }
+	100% { opacity: 0; top: 0px; }
+}
